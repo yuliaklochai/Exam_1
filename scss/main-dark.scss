@@ -12,8 +12,9 @@ body {
     font-family: $font_text;
     @include adaptive_font(18, 14);
     line-height: 1.4;
-    color: $color_text_light;
+    color: $color_text_dark;
     font-weight: 300;
+    background: #161926;
 }
 a {
     text-decoration: none;
@@ -30,7 +31,7 @@ img {
     font-weight: 400;
     &_colored {
         font-style: italic;
-        color: $color_title_colored_light;
+        color: $color_title_colored_dark;
         &:hover {
             text-decoration: underline;
         }
@@ -49,7 +50,7 @@ img {
     height: 950px;
     padding-top: 30px;
     @include flex-rule(normal, column, normal, nowrap);
-    background: linear-gradient(192deg, #ffffff00 46.73%, #FFFFFF 63.21%), url('../img/header_bg_light.png');
+    background: linear-gradient(183.11deg, #16192600 46.73%, #161926 63.21%), url('../img/header_bg_dark.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -79,7 +80,7 @@ img {
         line-height: 1.7;
         letter-spacing: 0.08em;
         :hover {
-            color: $color_btn_light;
+            color: $color_btn_dark;
         }
     }
     &__link {
@@ -125,7 +126,7 @@ img {
     border: none;
     outline: none;
     cursor: pointer;
-    color: $color_btn_light;
+    color: $color_btn_dark;
     text-transform: uppercase;
     font-weight: bold;
     @include adaptive_font(20, 12);
@@ -141,7 +142,7 @@ img {
         display: block;
         width: 100%;
         height: 13px;
-        background: #F1897B;
+        background: $color_btn_dark;
         opacity: 0.3;
         position: absolute;
         right: -7px;
@@ -163,7 +164,7 @@ img {
         max-width: 566px;
     }
     &__container {
-        background: #fff;
+        background: #161926;
         opacity: 0.9;
         position: absolute;
         right: 0;
@@ -209,7 +210,7 @@ img {
             content: '\0024';
             @include adaptive_font(40, 22);
             line-height: 1;
-            color: $color_secondary;
+            color: #E4E4E4;
         }
     }
 }
@@ -224,7 +225,7 @@ img {
             content: '';
             display: block;
             height: 1px;
-            background: $color_secondary;
+            background: $color_secondary_dark;
             width: 100%;
             position: relative;
             top: -30px;
@@ -249,7 +250,7 @@ img {
         &::before {
             content: '';
             display: block;
-            background: url('../img/quote-icon.png') no-repeat;
+            background: url('../img/quote-icon-dark.png') no-repeat;
             background-size: contain;
             width: 80px;
             height: 100px;
@@ -277,7 +278,7 @@ img {
     }
 }
 .player {
-    border: 1px solid $color_secondary;
+    border: 1px solid $color_secondary_dark;
     border-radius: 32px;
     padding: 25px 0;
     display: flex;
@@ -288,7 +289,7 @@ img {
         content: "";
         display: block;
         border-radius: 50%;
-        border: 1px solid $color_secondary;
+        border: 1px solid $color_secondary_dark;
     }
     &::before {
         width: 14px;
@@ -315,7 +316,7 @@ img {
         cursor: pointer;
         width: 15%;
         height: 100%;
-        fill: #262A3F;
+        fill: #689FF2;
         :hover {
             opacity: 0.8;;
         }
@@ -332,7 +333,7 @@ img {
     &__container {
         @include flex-rule(normal, row, center, wrap);
         align-content: space-around;
-        background: #fff;
+        background: #161926;
         opacity: 0.9;
         position: absolute;
         right: 0;
@@ -356,7 +357,7 @@ img {
     }
     &__button {
         padding: 10% 21%;
-        border: 1px solid $color_secondary;
+        border: 1px solid $color_secondary_dark;
         text-align: center;
         &::after {
             width: 36%;
@@ -411,10 +412,10 @@ img {
         height: 15px;
         width: 15px;
         border-radius: 50%;
-        background-color: $color_secondary;
+        background-color: $color_secondary_dark;
         margin: 0 10px 0 10px;
         &:hover {
-            background: $color_title_colored_light;
+            background: $color_title_colored_dark;
         }
     }
 }
@@ -451,7 +452,7 @@ img {
         bottom: 30px;
         fill: $color_secondary;
         &:hover {
-            fill: $color_title_colored_light;
+            fill: $color_title_colored_dark;
         }
         &_prev {
             left: 30px;
@@ -480,7 +481,7 @@ img {
 
 .contact {
     &__container {
-        border-top: 1px solid $color_secondary;
+        border-top: 1px solid $color_secondary_dark;
         padding: 120px 0;
         @include flex-rule(space-between, row, normal, wrap);
     }
@@ -496,10 +497,11 @@ img {
 }
 .form {
     &__item {
+        background: inherit;
         width: 100%;
         margin-bottom: 28px;
         border: none;
-        border-bottom: 1px solid $color_secondary;
+        border-bottom: 1px solid $color_secondary_dark;
         font-family: $font_title;
         font-style: italic;
         outline: none;
@@ -508,12 +510,13 @@ img {
         line-height: 1.1;
         letter-spacing: 0.08em;
         padding-bottom: 10px;
+        color: #BBBCC1;
     }
 }
 
 .footer {
     &__wrapper {
-        border-top: 1px solid $color_secondary;
+        border-top: 1px solid $color_secondary_dark;
         @include flex-rule(space-between, row, normal, nowrap);
         padding: 25px 0;
     }
