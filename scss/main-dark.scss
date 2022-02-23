@@ -56,9 +56,10 @@ img {
     background-size: cover;
 }
 .nav {
-    background: linear-gradient(270deg, #ffffff80 0%, #ffffff3e 24.1%, #ffffff00 47.19%), #ffffff05;
+    background: linear-gradient(270deg, #16192680 0%, #16192600 24.1%, #16192600 47.19%), #16192605;
     backdrop-filter: blur(9px);
     padding: 25px 0;
+    z-index: 2;
     & > .wrapper {
         @include flex-rule(space-between, row, center, nowrap)
     }
@@ -89,7 +90,7 @@ img {
 }
 .mode {
     display: inline-block;
-    background: #262A3F;
+    background: #FFFFFF;
     opacity: 0.3;
     border-radius: 1px;
     height: 32px;
@@ -538,3 +539,15 @@ img {
 }
 
 @import 'media-quer';
+
+@media screen and (max-width: $tablet_width) {
+    .menu {
+        background: linear-gradient(#262a3f,#161926);
+    }
+}
+
+@media screen and (max-width: $mobile_width) {
+    .header {
+        background: linear-gradient(#262a3f,#161926);
+    }
+}
