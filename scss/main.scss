@@ -67,13 +67,13 @@ img {
 }
 .logo {
     height: 32px;
+    margin-right: 20%;
 }
 .menu {
     list-style: none;
     flex-grow: 1;
-    @include flex-rule(flex-end, row, normal, nowrap);
+    @include flex-rule(space-evenly, row, normal, nowrap);
     &__item {
-        margin: 0 30px;
         font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.08em;
@@ -84,6 +84,15 @@ img {
     &__link {
         color: inherit;
     }
+}
+.mode {
+    display: inline-block;
+    padding: 7px;
+    background: #262A3F;
+    opacity: 0.3;
+    border-radius: 1px;
+    height: 32px;
+    width: 32px;
 }
 .banner {
     flex-grow: 1;
@@ -97,6 +106,7 @@ img {
     }
     &__title {
         margin-bottom: 25px;
+        font-size: 44px;
     }
     &__text {
         margin-bottom: 50px;

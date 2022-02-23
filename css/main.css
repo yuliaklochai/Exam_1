@@ -129,6 +129,7 @@ img {
 
 .logo {
   height: 32px;
+  margin-right: 20%;
 }
 
 .menu {
@@ -139,9 +140,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -154,7 +155,6 @@ img {
 }
 
 .menu__item {
-  margin: 0 30px;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.08em;
@@ -166,6 +166,16 @@ img {
 
 .menu__link {
   color: inherit;
+}
+
+.mode {
+  display: inline-block;
+  padding: 7px;
+  background: #262A3F;
+  opacity: 0.3;
+  border-radius: 1px;
+  height: 32px;
+  width: 32px;
 }
 
 .banner {
@@ -200,6 +210,7 @@ img {
 
 .banner__title {
   margin-bottom: 25px;
+  font-size: 44px;
 }
 
 .banner__text {
